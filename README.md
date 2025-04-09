@@ -1,3 +1,39 @@
+📦 Streetwear E-Commerce Website
+  A modern and responsive e-commerce website for a streetwear brand built with ReactJS and Firebase. Users can browse products, view different color options, manage a     shopping cart, and securely log in to access personal information.
+
+🔧 Key Features:
+
+  ✅ Home, Products, Contact & Cart Pages
+
+  🛍️ Product Variants by Color & Size
+
+  📸 Dynamic Product Images for Different Colors
+
+  🧾 Discounted Pricing with Original Price Display
+
+  👤 User Authentication (Firebase Auth)
+
+  📦 Add to Cart & Cart Counter in Navbar
+
+  📨 Contact Form with Email Integration
+
+  📁 Admin Product Form with Firebase Firestore Integration
+
+  📱 Fully Responsive Design
+
+🚀 Tech Stack:
+  Frontend: ReactJS, CSS
+  Backend/Database: Firebase Firestore & Firebase Authentication
+
+![Screenshot_9-4-2025_3654_localhost](https://github.com/user-attachments/assets/82b6bd8d-e98e-486f-9374-b5ed3f92ffa7)
+![Screenshot_9-4-2025_41930_localhost](https://github.com/user-attachments/assets/db8fd336-ab92-439a-8397-6a6a7eddad0c)
+![Screenshot_9-4-2025_42141_localhost](https://github.com/user-attachments/assets/42a6c646-2abd-4b9d-b5c2-2485612e5c51)
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
