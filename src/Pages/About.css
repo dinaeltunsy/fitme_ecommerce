@@ -1,0 +1,57 @@
+.About-img-container{
+    
+    color: white;
+    text-shadow: 10px;
+    background-image: url(../Assets/womanmodel.jpg);
+    background-size: cover;
+    padding: 50px 0px 50px 0px;
+    
+}
+
+.about-us,.mission,.why-fitme, .About-img-container p{
+  padding: 50px 120px;
+  text-align: center;
+
+
+
+}
+
+.about-us h1,.why-fitme h2 {
+
+    margin-bottom: 10px;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+.mission h2, .why-fitme h2{
+  font-weight: bold;
+  color: #0d6efd;
+} 
+
+  .about-us p,.mission p {
+    line-height: 1.6;
+    text-align: center;
+
+    
+  }
+
+  .why-fitme li{
+    list-style: none;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+  .why-fitme li{
+    line-height: 4;
+  }
+
+
+  @media (max-width: 480px) {
+
+    .about-us,.mission,.why-fitme, .About-img-container p{
+      padding: 50px 50px;
+        
+    
+    }
+
+}

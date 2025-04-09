@@ -1,0 +1,228 @@
+/* General Styles for Navbar */
+._navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #111;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  max-width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-bottom: 0px;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative; /* For dropdown positioning */
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: #f0e68c;
+  color: #111;
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.menu-icon:hover {
+  transform: rotate(90deg);
+}
+
+/* Drop-down styles */
+.dropdown {
+  position: relative; /* Relative to the nav item */
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+
+
+
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show the dropdown on hover */
+  background-color: #111;
+
+}
+
+
+.dropdown-menu li {
+  padding: 10px 5px 10px 5px;
+  white-space: nowrap;
+  
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-transform: none;
+  font-weight: 500;
+
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0e68c;
+  color: #111;
+
+}
+
+/* Cart icon */
+.cart-count{
+
+  color: #f0e68c;
+  background-color: #ff4757;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 40px;
+  padding: 2px 6px;
+}
+
+.cart-icon{
+  text-decoration: none;
+
+}
+
+/* Styling for the user icon */
+
+.auth-icon {
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.auth-icon:hover {
+  color: #f0e68c;
+}
+
+.dropdown-settings{
+  display: none;
+  position: relative;
+  background-color: black;
+  padding:20px;
+  border-radius: 10px;
+  width: max-content;
+
+}
+
+.dropdown-settings a{
+  display: list-item;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+
+
+}
+
+.dropdown-settings a:hover{
+  background-color: #0591AF;
+}
+
+.user-info:hover {
+  .dropdown-settings{
+    display: block;
+  }
+}
+
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 17, 17, 0.95);
+    gap: 30px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+  }
+
+  .menu-icon {
+    display: block;
+    z-index: 99;
+  }
+
+  .nav-links li {
+    font-size: 1.5rem;
+  }
+
+  .nav-links a {
+    padding: 20px 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Mobile Drop-down */
+  .dropdown-menu {
+    position: static;
+    display: block;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .dropdown-menu li {
+    padding: 10px 0;
+  }
+
+  .dropdown-menu a {
+    text-align: center;
+    padding: 10px 20px;
+    display: block;
+
+  }
+  .auth-icon {
+    font-size: 2rem;
+    margin-right: 20px;
+  }
+}

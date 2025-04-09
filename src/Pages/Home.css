@@ -1,0 +1,16 @@
+.home-sections-header{
+    border: 2px solid;
+    margin: 25px;
+    border-color: rgba(86, 86, 86, 0.067);
+    box-shadow: 5px 5px  rgba(86, 86, 86, 0.067);
+
+}
+.home-sections-header h3{
+    padding: 20px 20px;
+    margin-top: 10px;
+
+}
+.section-header{
+    letter-spacing: 8px;
+}
+

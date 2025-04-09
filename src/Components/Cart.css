@@ -1,0 +1,8 @@
+
+.product-grid ul{
+  list-style: none;
+}
+.product-grid li{
+  margin-top: 5px;
+  width: 250px;
+}
